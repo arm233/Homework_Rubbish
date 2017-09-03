@@ -7,8 +7,8 @@
 #include<iomanip>
 #include<string>
 using namespace std;
-void show_sum();
-void new_vip_member();
+void show_sum();//声明show_sum函数
+//菜单
 void menu()
 {
 	cout << endl << setw(40) << "欢迎使用健身房管理系统" << endl;
@@ -24,29 +24,31 @@ void menu()
 }
 
 
-
+//people基类
 class people {
 public:
 	char name[100];
 };
-
+//普通会员类
 class comon_member:public people
 {
 public:
-	int money1=1000;
-	string date;
+	int money1=1000;//办卡预存款
+	string date;//办卡日期
 	void new_member()
 	{
 		int choice = 1;
 		char ch;
 		cout << "普通会员年费1000块，所有器材无限制使用" << endl;
-		while (choice) {
+		while (choice) //循环判断持续输入
+		{
 			comon_member obj1;
-
+			
 			cout << "请输入姓名：";
 			cin >> obj1.name;
 			cout << "请输入办卡日期：(格式：20170701)" << endl;
 			cin >> obj1.date;
+			//文件输入输出流
 			ofstream fout("comon_member.txt", ios::app);
 			fout << "普通会员：" << endl;
 			fout << "姓名：" << obj1.name << "  ";
@@ -62,22 +64,25 @@ public:
 		}
 	}
 };
+//VIP会员类
 class vip_member:public people
 {
 public:
-	int money2=2000;
-	string date;
+	int money2=2000;//办卡预存款
+	string date;//办卡日期
 	void new_vip_member()
 	{
 		int choice = 1;
 		char ch;
 		cout << "VIP会员年费2000块，享受专业教练指导" << endl;
-		while (choice) {
+		while (choice) //循环判断持续输入
+		{
 			vip_member obj2;
 			cout << "请输入姓名：";
 			cin >> obj2.name;
 			cout << "请输入办卡日期：(格式：20170701)" << endl;
 			cin >> obj2.date;
+			//文件输入输出流
 			ofstream fout("vip_member.txt", ios::app);
 			fout << "VIP会员：" << endl;
 			fout << "姓名:" << obj2.name << "  ";
@@ -95,7 +100,7 @@ public:
 
 
 	
-void show_sum()
+void show_sum()//输出函数，从文件读取
 {
 
 	ifstream fin("comon_member.txt");
@@ -120,7 +125,7 @@ int main()
 {
 	int choice = 1, a;
 	char ch;
-	while (choice)
+	while (choice)//判断菜单循环
 	{
 		menu();
 		cin >> a;
