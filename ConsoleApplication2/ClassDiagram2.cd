@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Base" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAEAAAAAAAAAAAgAAAAAAAAQAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwimPool" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitRoom" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="people" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="comon_member" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAQAAEAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="vip_member" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAEAA=</HashCode>
+      <FileName>ConsoleApplication2.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
