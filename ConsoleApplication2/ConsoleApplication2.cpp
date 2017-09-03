@@ -6,6 +6,7 @@
 #include<fstream>
 #include<iomanip>
 #include<string>
+#include<stdlib.h>
 using namespace std;
 void show_sum();//声明show_sum函数
 //菜单
@@ -135,24 +136,26 @@ int main()
 		case 1:
 			cout << "60RMB每次" << endl; break;
 		case 2:
+			//普通会员注册
 		{comon_member w1;
 		w1.new_member();
 		break; }
 		case 3:
+			//VIP会员注册
 		{vip_member w2;
 		w2.new_vip_member();
 		break; }
 		case 4:
-			show_sum();
+			show_sum();//显示会员统计结果
 			break;
 		case 5:
-			exit(0);
+			exit(0);//退出
 		default:
 			cout << "输入结果有误" << endl;
 		}
 		cout << "保存并返回?(Y / N) :";
 		cin >> ch;
-		system("cls");
+		system("cls");//清屏
 		if (ch == 'n' || ch == 'N')
 			choice = 0;
 	}
